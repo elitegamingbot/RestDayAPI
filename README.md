@@ -19,7 +19,7 @@ bot:imageExists(imageName,currentFunction,isTextLogs)
   
   imageName(type:string) - name of the image e.g. example.png
   currentFunction(type:string) - any string you like as a title of the currently executing bot e.g. "Photoshop Bot"
-  isTextLogs(type:boolean) - if true display bot logs at the logs section of the software*
+  isTextLogs(type:boolean) - if true,display bot logs at the logs section of the software
   
 ```
   
