@@ -5,7 +5,7 @@ lua API for rest day scripting application
 
 ## Creating a bot
 ```
-bot=Bot() --creates a bot object to be use for clicking and typing
+bot=Bot() --creates a bot object to be use for clicking,typing and detecting images on the screen
 bot:click(Location(x,y)) -- click screen at coordinates x,y
 bot:type(letters) --letters is a string e.g. "abcde"
 ```
