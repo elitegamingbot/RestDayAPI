@@ -21,6 +21,15 @@ bot:imageExists(imageName,currentFunction,isTextLogs)
   currentFunction(type:string) - any string you like as a title of the currently executing bot e.g. "Photoshop Bot"
   isTextLogs(type:boolean) - if true,display bot logs at the logs section of the software
   
+  Returns:
+  true or false
+  
+```
+Sample Usage:
+```
+  if bot:imageExists("image.png","[Calculator Bot]",true) do
+     bot:clickLastMatch()
+  end
 ```
   
 For more info on the API's classes and functions visit the [Wiki](https://github.com/elitegamingbot/RestDayAPI/wiki)
