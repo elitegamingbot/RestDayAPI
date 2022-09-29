@@ -23,4 +23,4 @@ bot:imageExists(imageName,currentFunction,isTextLogs)
   
 ```
   
-For more info on the API classes and functions visit the wiki https://github.com/elitegamingbot/RestDayAPI/wiki
+For more info on the API's classes and functions visit the [Wiki](https://github.com/elitegamingbot/RestDayAPI/wiki)
