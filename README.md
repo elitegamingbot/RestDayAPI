@@ -3,14 +3,24 @@
 
 lua API for rest day scripting application
 
-#Creating a bot
+## Creating a bot
+```
 bot=Bot() --creates a bot object to be use for clicking and typing
 bot:click(Location(x,y)) -- click screen at coordinates x,y
 bot:type(letters) --letters is a string e.g. "abcde"
+```
 
 
-#Detecting images
-bot:imageExists(imageName,currentFunction,isTextLogs) -- str,str,boolean
-  -detects the image on the entire screen
+## Detecting images
+```
+bot:imageExists(imageName,currentFunction,isTextLogs)
+  
+  Parameters:
+  
+  imageName(type:string) - name of the image e.g. example.png
+  currentFunction(type:string) - any string you like as a title of the currently executing bot e.g. "Photoshop Bot"
+  isTextLogs(type:boolean) - if true display bot logs at the logs section of the software*
+  
+```
   
 For more info visit the wiki https://github.com/elitegamingbot/RestDayAPI/wiki
