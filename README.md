@@ -1,5 +1,5 @@
 # RestDayAPI
-  This is a repository of rest day application software. The software uses lua scripting language to automate your computer's mouse and keyboard and detect images on the screen. You can download the bot at:https://elitegamingbot.com/rest-day/
+  This is a repository of rest day application software. The software uses lua scripting language to automate your computer's mouse and keyboard and detect images on the screen. You can download the bot at: https://elitegamingbot.com/rest-day/
 
 lua API for rest day scripting application
 
