@@ -1,9 +1,10 @@
 {
-	/*Author: Elite Gaming Bot - elitegamingbot.com
+	/*
+	Author: Elite Gaming Bot - elitegamingbot.com
 	Date Created: September 21, 2022
-  Use for Visual Studio Code for autocomplete of codes
-  Usage: CONTROL+SHIFT+P -> Snippets: Configure User Snippets ->lua.json ->paste the content of this file to lua.json
-  */
+        Use for Visual Studio Code for autocomplete of codes
+        Usage: CONTROL+SHIFT+P -> Snippets: Configure User Snippets ->lua.json ->paste the content of this file to lua.json
+        */
   
 	"Bot Bot()":
 	{
