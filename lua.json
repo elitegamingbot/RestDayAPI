@@ -1,0 +1,505 @@
+{
+	/*Author: Elite Gaming Bot - elitegamingbot.com
+	Date Created: September 21, 2022
+  Use for Visual Studio Code for autocomplete of codes
+  Usage: CONTROL+SHIFT+P -> Snippets: Configure User Snippets ->lua.json ->paste the content of this file to lua.json
+  */
+  
+	"Bot Bot()":
+	{
+		"prefix":["Bot","B","Bo"],
+		"body":["Bot()"],
+		"description": "create new Bot object"
+	},
+	"click(Location) method":
+	{
+		"prefix":["click"],
+		"body":[
+			"click(Location(x,y$0))"
+		],
+		"description": "click at certain location on the screen"
+	},
+	"click(Location,ms) method":
+	{
+		"prefix":["click"],
+		"body":[
+			"click(Location(x,y$0),ms)"
+		],
+		"description": "click at certain location on the screen for certain milliseconds"
+	},
+	"click(Match) method":
+	{
+		"prefix":["click"],
+		"body":[
+			"click(Match(x,y,w,h$0))"
+		],
+		"description": "click at certain location on the screen"
+	},
+	"click(Region) method":
+	{
+		"prefix":["click"],
+		"body":[
+			"click(Region(x,y,w,h$0))"
+		],
+		"description": "click at certain region on the screen"
+	},
+	"clickLastMatch() method":
+	{
+		"prefix":["clickLastMatch()"],
+		"body":[
+			"clickLastMatch()"
+		],
+		"description": "click the last detected image Match(The Match object is created by the last detected image on the screen)"
+	},
+	"rightClickLastMatch() method":
+	{
+		"prefix":["rightClickLastMatch()"],
+		"body":[
+			"rightClickLastMatch()"
+		],
+		"description": "right click the last detected image Match(The Match object is created by the last detected image on the screen)"
+	}
+	,
+	"rightClick(Location) method":
+	{
+		"prefix":["rightClick("],
+		"body":[
+			"rightClick(Location(x,y$0))"
+		],
+		"description": "right click at certain location on the screen"
+	},
+	"rightClick(Location,ms) method":
+	{
+		"prefix":["rightClick"],
+		"body":[
+			"rightClick(Location(x,y$0),ms)"
+		],
+		"description": "right click at certain location on the screen for certain milliseconds"
+	},
+	"rightClick(Match) method":
+	{
+		"prefix":["rightClick"],
+		"body":[
+			"rightClick(Match(x,y,w,h$0))"
+		],
+		"description": "right click at certain location on the screen"
+	},
+	"rightClick(Region) method":
+	{
+		"prefix":["rightClick"],
+		"body":[
+			"rightClick(Region(x,y,w,h$0))"
+		],
+		"description": "right click at certain region on the screen"
+	},
+	"mouseUp(Button) method":
+	{
+		"prefix":["mouseUp"],
+		"body":[
+			"mouseUp(Button.$0) -- Button.LEFT,Button.RIGHT"
+		],
+		"description": "release the mouse button at current mouse location"
+	},
+	"mouseDown(Button) method":
+	{
+		"prefix":["mouseDown"],
+		"body":[
+			"mouseDown(Button.$0) -- Button.LEFT,Button.RIGHT"
+		],
+		"description": "hold the mouse button at the current mouse location"
+	}
+	,
+	"mouseMove(Location) method":
+	{
+		"prefix":["mouseMove"],
+		"body":[
+			"mouseMove(Location(x,y$0))"
+		],
+		"description": "move the mouse at a certain location"
+	}
+	,
+	"type(letters) method":
+	{
+		"prefix":["type(letters)"],
+		"body":[
+			"type(\"$0\")"
+		],
+		"description": "type letter/s"
+	}
+	,
+	"type(letters,delayMs) method":
+	{
+		"prefix":["type(letters,delayMs)"],
+		"body":[
+			"type(\"\",delayInMs$0)"
+		],
+		"description": "type letter/s, which wait every delayMs for each key"
+	}
+	,
+	"type(keyCode) method":
+	{
+		"prefix":["type(keyCode)"],
+		"body":[
+			"type(Key.VK_$0)"
+		],
+		"description": "type a key code, the key code is available in the Key class"
+	}
+	,
+	"keyDown(keyCode) method":
+	{
+		"prefix":["keyDown(keyCode)"],
+		"body":[
+			"keyDown(Key.VK_$0)"
+		],
+		"description": "hold a key code, the key code is available in the Key class"
+	}
+	,
+	"keyUp(keyCode) method":
+	{
+		"prefix":["keyUp(keyCode)"],
+		"body":[
+			"keyUp(Key.VK_$0)"
+		],
+		"description": "release a key code, the key code is available in the Key class"
+	}
+	,
+	"keyDown(letter) method":
+	{
+		"prefix":["keyDown(letter)"],
+		"body":[
+			"keyDown(\"$0\")"
+		],
+		"description": "hold a keyboard letter [a-z,A-Z]"
+	}
+	,
+	"keyUp(letter) method":
+	{
+		"prefix":["keyUp(letter)"],
+		"body":[
+			"keyUp(\"$0\")"
+		],
+		"description": "release a keyboard letter [a-z,A-Z]"
+	}
+	,
+	"getScreenCenter() method":
+	{
+		"prefix":["getScreenCenter()"],
+		"body":[
+			"getScreenCenter()$0"
+		],
+		"description": "return the center of the screen as a Location"
+	}
+	,
+	"setImagePath(path) method":
+	{
+		"prefix":["setImagePath"],
+		"body":[
+			"setImagePath(\"$0\")"
+		],
+		"description": "set the image path in the current directory E.g.lua/script_images/"
+	}
+	,
+	"sleep() method":
+	{
+		"prefix":["sleep()"],
+		"body":[
+			"sleep()$0"
+		],
+		"description": "sleep or wait for 3 seconds"
+	}
+	,
+	"sleep(ms) method":
+	{
+		"prefix":["sleep(ms)"],
+		"body":[
+			"sleep(ms$0) --1000ms = 1 second"
+		],
+		"description": "sleep or wait depending on the ms(milliseconds parameter) 1000ms=1 second"
+	}
+	,
+	"Match getLastMatch() method":
+	{
+		"prefix":["getLastMatch()"],
+		"body":[
+			"getLastMatch()"
+		],
+		"description": "return the last Match created by detecting image on the screen"
+	}
+	,
+	"boolean imageExists(imageName,currentFunction,isDisplayLog) method":
+	{
+		"prefix":["imageExists("],
+		"body":[
+			"imageExists('$0','',)"
+		],
+		"description": ["detect imageName on the entire screen",
+						",currentFunction is the name of the bot e.g.[Fishing] that will be put in the logs",
+						",isDisplayLog turns on/off the currentFunction log and the screen highlighter"]
+	}
+	,
+	"boolean imageExists(region,imageName,currentFunction,isDisplayLog) method":
+	{
+		"prefix":["imageExists("],
+		"body":[
+			"imageExists($0,'','',)"
+		],
+		"description": ["detect imageName on the region specified",
+						",currentFunction is the name of the bot e.g.[Fishing] that will be put in the logs",
+						",isDisplayLog turns on/off the currentFunction log and the screen highlighter"]
+	},
+	"boolean imageExists(imageName,currentFunction,isDisplayLog,comparePercentage) method":
+	{
+		"prefix":["imageExists("],
+		"body":[
+			"imageExists('$0','',,0.7)"
+		],
+		"description": ["detect imageName on the entire screen",
+						",currentFunction is the name of the bot e.g.[Fishing] that will be put in the logs",
+						",isDisplayLog turns on/off the currentFunction log and the screen highlighter,",
+						"comparePercentage sets the accuracy of image detection algorithm(default is 0.7 or 70%)"]
+	}
+	,
+	"boolean imageExists(region,imageName,currentFunction,isDisplayLog,comparePercentage) method":
+	{
+		"prefix":["imageExists(region,imageName,currentFunction,isDisplayLog,comparePercentage)"],
+		"body":[
+			"imageExists($0,'','',0.7)"
+		],
+		"description": ["detect imageName on the region specified",
+						",currentFunction is the name of the bot e.g.[Fishing] that will be put in the logs",
+						",isDisplayLog turns on/off the currentFunction log and the screen highlighter,",
+						"comparePercentage sets the accuracy of image detection algorithm(default is 0.7 or 70%)"]
+	}
+	,
+	"number findAll(region,imageName) method":
+	{
+		"prefix":["findAll(region,imageName)"],
+		"body":[
+			"findAll($0,)"
+		],
+		"description": ["detects all occurences of the image in the region specified",
+						",returns the count of all occurence,",
+						"this function saves the occurences as an array of Location"]
+	}
+	,
+	"Location getLastFind(index) method":
+	{
+		"prefix":["getLastFind(index)"],
+		"body":[
+			"getLastFind($0)"
+		],
+		"description": ["get findAll result at the index specified",
+						",returns the Location at index specified,",
+						"remember!! lua starts at index 1"]
+	}
+	,
+	"string put(key,value) method":
+	{
+		"prefix":["put("],
+		"body":[
+			"put($0,)"
+		],
+		"description": ["save the key,value pair to a storage"]
+	}
+	,
+	"string get(key,defaultValue) method":
+	{
+		"prefix":["get("],
+		"body":[
+			"get($0,)"
+		],
+		"description": ["get the stored value on a key,if no value found in the storage",
+						"defaultValue is used"]
+	}
+	,
+	"string get(key) method":
+	{
+		"prefix":["get("],
+		"body":[
+			"get($0,)"
+		],
+		"description": ["get the stored value on a key,if no value found return an empty string"]
+	}
+	,
+	"Button class":
+	{
+		"prefix":["Button."],
+		"body":[
+			"Button.$0"
+		],
+		"description": ["mouse Button class with fields LEFT,MIDDLE,RIGHT"]
+	}
+	,
+	"LEFT mouse button":
+	{
+		"prefix":["LEFT"],
+		"body":[
+			"LEFT"
+		],
+		"description": ["mouse Button class LEFT button"]
+	}
+	,
+	"RIGHT mouse button":
+	{
+		"prefix":["RIGHT"],
+		"body":[
+			"RIGHT"
+		],
+		"description": ["mouse Button class RIGHT button"]
+	}
+	,
+	"for generic":
+	{
+		"prefix":["for"],
+		"body":[
+			"for k,v in pairs(table$0) do --key,value",
+			"\t",
+			"end"
+		],
+		"description": "for loop in generic, k=key v=value"
+	},
+	"for loop":
+	{
+		"prefix":["for"],
+		"body":[
+			"for i=1,10 do",
+			"\t$0",
+			"end"
+		],
+		"description": "for loop creation"
+	},
+	"while loop":
+	{
+		"prefix":["while"],
+		"body": 
+		[
+			"while cond$0 do",
+			"\t",
+			"end"
+		],
+		"description": ""
+	},
+	"class":
+	{
+		"prefix":["Class"],
+		"body":
+		[
+			"Class={var1=0}--input fields here",
+			"function Class:new(o)",
+			"\to=o or {}",
+			"\tsetmetatable(o,self)",
+			"\tself.__index=self",
+			"\treturn o",
+			"end",
+			"function Class:setVar1(var1)",
+			"\tself.var1=var1",
+			"end",
+			"function Class:getVar1()",
+			"\treturn self.var1",
+			"end"
+		],
+		"description": "class creation sample"
+	},
+	"if condition":
+	{
+		"prefix": ["if"],
+		"body":
+		[
+			"if cond$0 then",
+			"\t",
+			"end"
+		],
+		"description": "if creation"
+	},
+	"if..elseif condition":
+	{
+		"prefix": "if",
+		"body": 
+		[
+			"if cond$0 then",
+			"\t",
+			"elseif cond then",
+			"\t",
+			"end"
+		],
+		"description": "if..elseif creation"
+	},
+	"if..elseif..else condition":
+	{
+		"prefix": "if",
+		"body": 
+		[
+			"if cond$0 then",
+			"\t",
+			"elseif cond then",
+			"\t",
+			"else",
+			"\t",
+			"end"
+		],
+		"description": "if..elseif..else creation"
+	},
+	"function creator":
+	{
+		"prefix": "function",
+		"body":
+		[
+			"function funName$0()",
+			"\t",
+			"end"
+		],
+		"description": "create a function"
+	},
+	"function multiple return":
+	{
+		"prefix": "function",
+		"body":
+		[
+			"function funName$0()",
+			"\t",
+			"\treturn var1,var2,var3",
+			"end"
+		],
+		"description": "create a function with multiple variable to return"
+	},
+	"function variadic":
+	{
+		"prefix": "function",
+		"body": 
+		[
+			"function funName$0(...)",
+			"\tlocal a,b,c=...",
+			"end"
+		],
+		"description": "create a variadic function with no variable to return"
+	},
+	"function variadic with return":
+	{
+		"prefix": "function",
+		"body": 
+		[
+			"function funName$0(...)",
+			"\tlocal a,b,c=...",
+			"\treturn a,b,c",
+			"end"
+		],
+		"description": "create a variadic function with variable to return"
+	},
+	"thread creation":
+	{
+		"prefix": "thread",
+		"body": 
+		[
+			"function threadFunction()",
+			"\t--execute task here",
+			"end",
+			"thread1=coroutine.create(threadFunction)",
+			"coroutine.resume(thread1)",
+			"--other functions",
+			"--coroutine.yield([,var1])"
+		],
+		"description": "create a thread"
+	}
+
+
+}
